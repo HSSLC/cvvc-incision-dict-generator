@@ -8,7 +8,7 @@ with open('cvvc_dict_conf.ini') as conf_file:
             index = line.find('=')
             config.setdefault(line[:index], line[index+1:])
     
-with open(config['path']) as presamp_file:
+with open(config['presamp']) as presamp_file:
     tag = ''
     data_list = []
     tmp_dict = {}
@@ -48,7 +48,7 @@ with open(config['path']) as presamp_file:
                     tmp_dict[c][0] = tmp_list[0]
     data_list = [tmp_dict[x] for x in tmp_dict]
 
-with open('CVVChinese-xia-v3.ini', 'w', encoding='utf-8') as xia:
+with open(config['output'], 'w', encoding='utf-16') as xia:
     xia.write('[Setting]\nName=%s\nStaticHead=%s\nStaticLength=%s\nIgnoreMaxR=%s\n' % (config['Name'], config['StaticHead'], config['StaticLength'], config['IgnoreMaxR']))
     xia.write('[TwoNote]\n')
     #發音交錯生成
