@@ -2,6 +2,7 @@
 # 本程式是幫朋友代管
 
 自動從cvvc的presamp.ini產生UTAU Incision Plugin格式的拆音字典  
+此程式產生的成品配布:[CVVC夏語遙v3拆音字點檔](https://bowlroll.net/file/245265)
 
 配置要從旁邊的cvvc_dict_conf.ini調整:  
 <pre>
