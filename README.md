@@ -1,0 +1,1 @@
+# cvvc-incision-dict-generator
